@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_05"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="40"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/txtViewSearchTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Búsqueda de usuarios"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text="Busque otros usuarios para contactarlos por su email..."
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/txtSearchUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/searchUser"
+        android:layout_weight="9"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/buscar1"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edt_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewEmailTittle"
+            android:layout_width="86dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="5"
+            android:drawableLeft="@drawable/email1"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:text="Email:"
+            android:textAlignment="viewStart"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtViewEmail"
+            android:layout_width="252dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="5"
+            android:ems="10"
+            android:onClick="toEmail"
+            android:textAlignment="viewStart"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp"
+            android:text="@string/email_link"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="15"
+        android:layout_marginTop="15dp"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="15dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="130dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:onClick="search"
+            android:text="@string/buscar2"
+            android:textColor="@color/blanco"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="15"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewBackToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableBottom="@drawable/volver1"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:onClick="toHomeActivity"
+            android:text="@string/volver" />
+
+    </LinearLayout>
+</LinearLayout>

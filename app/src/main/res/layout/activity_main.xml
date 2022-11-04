@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_05"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="381dp"
+        android:layout_height="2dp"
+        android:layout_weight="50"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/txtViewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="LoginS8a"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="9"
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/usuario_5"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/user"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_weight="9"
+        android:hint="@string/password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/bloquear"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edt_style" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="125dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="10"
+        android:background="@drawable/btn_style"
+        android:onClick="signIn"
+        android:text="@string/ingresar"
+        android:textColor="@color/blanco"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtViewSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:onClick="toSignupActivity"
+        android:text="@string/registrar"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="15"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageBtnFacebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:onClick="toFacebook"
+            app:srcCompat="@drawable/facebook_2" />
+
+        <ImageButton
+            android:id="@+id/imageBtnGoogle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:onClick="toGoogle"
+            app:srcCompat="@drawable/google_mas" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtViewRememberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/obtener_contraseña"
+        android:textStyle="bold|italic" />
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_05"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="40"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/txtViewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Edite / Borre su usuario"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewEmailTittle"
+            android:layout_width="72dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="5"
+            android:drawableLeft="@drawable/email1"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:text="Email:"
+            android:textAlignment="viewStart"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtViewUserEmail"
+            android:layout_width="252dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="5"
+            android:ems="10"
+            android:text="email@gmail.com"
+            android:textAlignment="viewStart"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtEditUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/newUser"
+        android:layout_weight="9"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/usuario_5"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edt_style" />
+
+    <EditText
+        android:id="@+id/txtEditPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_weight="9"
+        android:hint="@string/newPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/bloquear"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edt_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="15"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="15dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:onClick="signUp"
+            android:text="@string/actualizar"
+            android:textColor="@color/blanco"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="15dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:onClick="signUp"
+            android:text="@string/eliminar"
+            android:textColor="@color/blanco"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="15"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewBackToHome2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableBottom="@drawable/volver1"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:onClick="toHomeActivity2"
+            android:text="@string/volver" />
+
+    </LinearLayout>
+</LinearLayout>

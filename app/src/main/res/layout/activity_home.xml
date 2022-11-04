@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_05"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="38dp"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        android:textAlignment="textEnd">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="334dp"
+            android:layout_height="212dp"
+            android:layout_weight="50"
+            app:srcCompat="@drawable/login" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewWelcome"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bienvenida"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtViewUserName"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Usuario"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/txtViewMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="¿Qué desea hacer?"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="34sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnSearchUsers"
+                android:layout_width="15dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style"
+                android:text="@string/buscar"
+                android:textColor="@color/blanco"
+                android:textStyle="bold|italic"
+                android:onClick="toSearchActivity"/>
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="15dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style"
+                android:text="@string/crear"
+                android:textColor="@color/blanco"
+                android:textStyle="bold|italic"
+                android:onClick="toSignUpActivity2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEditDelete"
+                android:layout_width="15dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style"
+                android:text="@string/editar_borrar"
+                android:textColor="@color/blanco"
+                android:textStyle="bold|italic"
+                android:onClick="toEditDeleteActivity"/>
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="15dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style"
+                android:text="@string/info"
+                android:textColor="@color/blanco"
+                android:textStyle="bold|italic"
+                android:onClick="toAboutActivity"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtViewExitToMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableBottom="@drawable/volver1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:onClick="toMainActivity2"
+                android:text="@string/salir"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

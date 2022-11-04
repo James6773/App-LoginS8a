@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LoginS8a</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="registrar">¿No estás registrado aún?
+        <u>¡Regístrate!</u></string>
+    <string name="obtener_contraseña">¿Se te olvido la contraseña? <u>Haz click aquí</u></string>
+    <string name="email">Email</string>
+    <string name="confirmPassword">Confirmar Contraseña</string>
+    <string name="volver"><u>Volver</u></string>
+    <string name="registrarse">Registrarse</string>
+    <string name="bienvenida">Bienvenid@</string>
+    <string name="salir"><u>Salir</u></string>
+    <string name="buscar">Busque otro usuario</string>
+    <string name="crear">Cree un usuario nuevo</string>
+    <string name="editar_borrar">Edite / Borre su usuario</string>
+    <string name="info">Acerca de</string>
+    <string name="newUser">Nuevo Usuario</string>
+    <string name="newPassword">Nueva Contraseña</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="creditos">Aplicación desarrollada por:              <u>Santiago Ochoa Montoya</u></string>
+    <string name="version">Versión:    <u>2.0</u></string>
+    <string name="lenguaje">Lenguaje:    <u>Java</u></string>
+    <string name="searchUser">Buscar Usuario</string>
+    <string name="buscar2">Buscar</string>
+    <string name="email_link"><u></u></string>
+</resources>
